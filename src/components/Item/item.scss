@@ -1,0 +1,88 @@
+@import "../../App.scss";
+
+.item {
+  width: 100%;
+  background: $mainWhite;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.item-header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 2px solid $mainGrey;
+  text-align: left;
+}
+
+.numberic {
+  color: $mainDarkText;
+  text-transform: capitalize;
+}
+.item-icons {
+  i {
+    margin-left: 1rem;
+    color: $mainDarkText;
+    cursor: pointer;
+  }
+
+  i:hover {
+    color: $secondaryColor;
+  }
+}
+
+.item-content {
+  padding: 1rem 1rem 0.2rem 1rem;
+}
+
+.input-text {
+  display: block;
+  width: 100%;
+  height: 2rem;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid $mainDarkIcon;
+  text-align: start;
+}
+
+.input-text::placeholder {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: $letterSpacing;
+}
+
+.input-text:focus {
+  border-bottom: 3px solid $secondaryColor;
+}
+
+.btn-add {
+  font-size: 1.7rem;
+  border: none;
+  outline: none;
+  margin-bottom: 1.5rem;
+  color: $primaryColor;
+  cursor: pointer;
+  transition: $mainTransition;
+
+  &:hover {
+    color: $secondaryColor;
+  }
+}
+
+.btn-disabled {
+  font-size: 1.4rem;
+  border: none;
+  outline: none;
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .item-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2rem;
+  }
+}

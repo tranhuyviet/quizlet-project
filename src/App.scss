@@ -1,0 +1,36 @@
+// google font Open Sans
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
+
+// reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// ****** GLOBAL VARIABLES ******
+
+//color
+$primaryColor: #3ccfcf;
+$secondaryColor: #ffcd1f;
+$mainWhite: #fff;
+$mainGrey: #f0f0f0;
+$mainDarkText: #97a5aa;
+$mainDarkIcon: #455358;
+
+//other
+$mainTransition: all 0.3s linear;
+$letterSpacing: 0.2rem;
+
+// ****** END OF GLOBAL VARIABLES ******
+
+body {
+  background: $mainGrey;
+  font-family: "Open Sans", sans-serif;
+}
+
+.main-center {
+  width: 80vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
